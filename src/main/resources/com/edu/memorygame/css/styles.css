@@ -1,0 +1,25 @@
+.btn {
+    -fx-text-fill: white;
+    -fx-min-width: 150;
+}
+.btn:hover {
+    -fx-cursor: hand;
+}
+.btn-green {
+    -fx-background-color: #50ba54;
+}
+.btn-gray {
+    -fx-background-color: #777777;
+}
+.btn-red {
+    -fx-background-color: #de544a;
+}
+.btn-green:hover {
+    -fx-background-color: #429a44;
+}
+.btn-gray:hover {
+    -fx-background-color: #5d5c5c;
+}
+.btn-red:hover {
+    -fx-background-color: #be453e;
+}

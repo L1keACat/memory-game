@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edu.memorygame.controller.HighScoresViewController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="297.0" prefWidth="488.0" spacing="20">
+            <padding>
+                <Insets bottom="25" left="25" right="25" top="25" />
+            </padding>
+            <Text text="High Scores">
+                <font>
+                    <Font name="Times New Roman Bold" size="24.0" />
+                </font>
+            </Text>
+         <ListView fx:id="highScoresList" prefHeight="200.0" prefWidth="200.0" />
+        </VBox>
+    </center>
+</BorderPane>

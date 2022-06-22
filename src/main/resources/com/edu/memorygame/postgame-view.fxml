@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <padding>
+                <Insets bottom="25" left="25" right="25" top="25" />
+            </padding>
+            <Text text="Submit your high score">
+                <font>
+                    <Font name="Times New Roman" size="24.0" />
+                </font>
+            </Text>
+            <Text fx:id="gridSizeFieldText" text="Grid size: ">
+                <font>
+                    <Font name="Times New Roman" size="15.0" />
+                </font>
+            </Text>
+            <Text fx:id="timeSpentFieldText" text="Time spent: ">
+                <font>
+                    <Font name="Times New Roman" size="15.0" />
+                </font>
+            </Text>
+            <Text fx:id="rightGuessesFieldText" text="1st try right guesses: ">
+                <font>
+                    <Font name="Times New Roman" size="15.0" />
+                </font>
+            </Text>
+            <Text fx:id="scoreFieldText" text="Score: ">
+                <font>
+                    <Font name="Times New Roman Bold" size="24.0" />
+                </font>
+            </Text>
+            <TextField fx:id="nameInputField" prefHeight="25.0" prefWidth="240.0" text="Player" />
+            <Button fx:id="submitButton" mnemonicParsing="false" styleClass="btn, btn-green" text="Submit">
+                <font>
+                    <Font name="Times New Roman" size="20.0" />
+                </font>
+            </Button>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<BorderPane stylesheets="@css/styles.css"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.edu.memorygame.controller.HelloController">
+    <center>
+        <VBox alignment="CENTER" spacing="20.0">
+            <padding>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            </padding>
+
+            <Label fx:id="titleText" text="Title">
+                <font>
+                    <Font name="Times New Roman Bold" size="30.0"/>
+                </font>
+            </Label>
+            <Button onAction="#onNewGameButtonClick" styleClass="btn, btn-green" text="New Game"
+                    textAlignment="CENTER">
+                <font>
+                    <Font name="Times New Roman" size="20.0"/>
+                </font>
+            </Button>
+            <Button onAction="#onHighScoresButtonClick" styleClass="btn, btn-gray"
+                    text="High Scores"
+                    textAlignment="CENTER">
+                <font>
+                    <Font name="Times New Roman" size="20.0"/>
+                </font>
+            </Button>
+            <Button onAction="#onExitButtonClick" styleClass="btn, btn-red" text="Exit"
+                    textAlignment="CENTER">
+                <font>
+                    <Font name="Times New Roman" size="20.0"/>
+                </font>
+            </Button>
+        </VBox>
+    </center>
+</BorderPane>

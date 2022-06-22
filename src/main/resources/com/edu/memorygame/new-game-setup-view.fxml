@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane prefHeight="200.0" prefWidth="400.0" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.edu.memorygame.controller.NewGameSetupViewController">
+    <center>
+        <VBox alignment="CENTER">
+            <Label text="Set dimensions of the grid">
+                <font>
+                    <Font name="Times New Roman Bold" size="22.0"/>
+                </font>
+            </Label>
+            <HBox alignment="CENTER">
+                <VBox alignment="CENTER">
+                    <padding><Insets top="25" bottom="25" right="25" left="25"/></padding>
+                    <Label text="Rows">
+                        <font>
+                            <Font name="Times New Roman" size="12.0"/>
+                        </font>
+                    </Label>
+                    <ComboBox fx:id="comboBoxRows" layoutX="84.0" layoutY="100.0" prefHeight="25.0" prefWidth="75.0"
+                              promptText="Row"/>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <padding><Insets top="25" bottom="25" right="25" left="25"/></padding>
+                    <Label text="Columns">
+                        <font>
+                            <Font name="Times New Roman" size="12.0"/>
+                        </font>
+                    </Label>
+                    <ComboBox fx:id="comboBoxCols" layoutX="248.0" layoutY="100.0" prefHeight="25.0" prefWidth="75.0"
+                              promptText="Col"/>
+                </VBox>
+            </HBox>
+            <Button fx:id="playButton" mnemonicParsing="false"
+                    onAction="#onPlayButtonClick" styleClass="btn-green, btn" text="Play" textAlignment="CENTER">
+                <font>
+                    <Font name="Times New Roman Bold" size="16.0"/>
+                </font>
+            </Button>
+        </VBox>
+    </center>
+</BorderPane>
